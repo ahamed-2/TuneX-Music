@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Splash Screen Theme (Dynamic Color for API 31+ Light Mode) -->
+    <style name="Theme.TuneX.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@android:color/system_neutral1_10</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/tunex_music_logo</item>
+        <item name="windowSplashScreenAnimationDuration">800</item>
+        <item name="postSplashScreenTheme">@style/Theme.TuneX</item>
+    </style>
+</resources>

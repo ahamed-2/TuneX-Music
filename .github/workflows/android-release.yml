@@ -1,0 +1,78 @@
+name: Android Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+# Grant the GITHUB_TOKEN write access to repository contents so the Release
+# creation step (softprops/action-gh-release) is allowed to publish the APK.
+# Without this, release creation fails with "Resource not accessible by integration".
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'gradle'
+
+      # Release signing keys are provided via GitHub Secrets (never hardcoded).
+      # Required secrets:
+      #   ANDROID_KEYSTORE_BASE64        base64-encoded signing keystore file
+      #   ANDROID_KEYSTORE_PASSWORD      keystore password
+      #   ANDROID_KEY_ALIAS              signing key alias
+      #   ANDROID_KEY_ALIAS_PASSWORD     signing key password
+      - name: Decode and write release keystore
+        run: |
+          mkdir -p $HOME/keystores
+          echo "$ANDROID_KEYSTORE_BASE64" | base64 --decode > $HOME/keystores/tunexmusic.jks
+        env:
+          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+
+      - name: Set keystore env vars
+        run: |
+          echo "ANDROID_KEYSTORE_PATH=$HOME/keystores/tunexmusic.jks" >> $GITHUB_ENV
+          echo "ANDROID_KEYSTORE_PASSWORD=${{ secrets.ANDROID_KEYSTORE_PASSWORD }}" >> $GITHUB_ENV
+          echo "ANDROID_KEY_ALIAS=${{ secrets.ANDROID_KEY_ALIAS }}" >> $GITHUB_ENV
+          echo "ANDROID_KEY_ALIAS_PASSWORD=${{ secrets.ANDROID_KEY_ALIAS_PASSWORD }}" >> $GITHUB_ENV
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Build Release APK
+        run: ./gradlew assembleRelease
+
+      - name: Upload APK as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release
+          path: app/build/outputs/apk/release/app-release.apk
+
+      - name: Generate checksum
+        run: |
+          cd app/build/outputs/apk/release
+          sha256sum app-release.apk > checksum.txt
+
+      - name: Create GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            app/build/outputs/apk/release/app-release.apk
+            app/build/outputs/apk/release/checksum.txt
+          body: |
+            # TuneX Music ${{ github.ref_name }}
+
+            Release notes for this version of TuneX Music.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
