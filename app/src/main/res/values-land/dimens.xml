@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Optimized spacing for landscape - reduced for better fit -->
+
+    <!-- Album art proportions for landscape - slightly smaller -->
+
+    <!-- Vertical spacing - REDUCED for landscape fit -->
+
+    <!-- Top and bottom padding - minimal for landscape -->
+
+    <!-- Text sizes - compact for landscape -->
+
+    <!-- Slider - thinner for landscape compactness -->
+
+    <!-- Main Controls - compact but usable -->
+
+    <!-- Volume FABs - mini size for landscape -->
+
+    <!-- Action buttons - reduced height -->
+
+    <!-- Controls max width for landscape -->
+
+</resources>

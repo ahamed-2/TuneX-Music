@@ -1,0 +1,104 @@
+TuneX Music
+Copyright © 2026 Ahamed Rahim.
+TuneX Music is a rebranded derivative of SpatialFlow
+Copyright © 2026 Shubham Karande.
+
+===============================================================================
+                                NOTICE
+===============================================================================
+
+Thank you for using TuneX Music.
+
+TuneX Music is a rebranded and extended Android music player developed and
+maintained by Ahamed Rahim. It is based on the open-source SpatialFlow project,
+originally developed and maintained by Shubham Karande. This NOTICE file
+accompanies the Apache License, Version 2.0, under which the source code is
+distributed.
+
+===============================================================================
+ATTRIBUTION
+===============================================================================
+
+TuneX Music is a derivative work of SpatialFlow:
+
+    Based on SpatialFlow by Shubham Karande
+    https://github.com/MythicalSHUB/SpatialFlow
+
+    This project incorporates code from SpatialFlow
+    Copyright © 2026 Shubham Karande
+    https://github.com/MythicalSHUB/SpatialFlow
+
+The original SpatialFlow source code and the third-party libraries it depends
+upon were written by their respective authors and are NOT claimed to be the
+original work of the TuneX Music maintainer.
+
+TuneX Music's modifications and rebranding are maintained by:
+
+    Ahamed Rahim
+    https://github.com/ahamed-2/TuneX-Music
+
+===============================================================================
+BRANDING
+===============================================================================
+
+The Apache License applies only to the source code unless otherwise stated.
+
+The following are NOT licensed under the Apache License and may not be copied,
+redistributed, or used to imply endorsement without prior written permission
+from the respective copyright holders:
+
+• SpatialFlow name, logo, brand, and visual identity (Shubham Karande)
+• TuneX Music name, logo, and visual identity (Ahamed Rahim)
+• Application icons and launcher branding
+• Screenshots and promotional graphics
+• Artwork and marketing materials
+• Official release assets
+
+Forks and derivative works must not present themselves as the official
+TuneX Music or SpatialFlow project or imply affiliation with the original
+authors.
+
+===============================================================================
+THIRD-PARTY SOFTWARE
+===============================================================================
+
+TuneX Music includes or depends upon third-party open-source libraries,
+frameworks, and services, each of which remains licensed under its respective
+license.
+
+Users and redistributors are responsible for complying with all applicable
+third-party license terms.
+
+===============================================================================
+CONTRIBUTIONS
+===============================================================================
+
+Unless explicitly stated otherwise, any contribution intentionally submitted
+for inclusion in TuneX Music shall be licensed under the same terms as the
+project's Apache License, Version 2.0.
+
+===============================================================================
+SUPPORT THE PROJECT
+===============================================================================
+
+If TuneX Music has been helpful to you or your project, please consider:
+
+• Starring the GitHub repository
+• Providing attribution when using substantial portions of the project
+• Reporting issues and contributing improvements
+• Sharing the project with the community
+
+GitHub Repository:
+https://github.com/ahamed-2/TuneX-Music
+
+===============================================================================
+DISCLAIMER
+===============================================================================
+
+This NOTICE file is provided for informational purposes only and supplements
+the Apache License, Version 2.0.
+
+Nothing in this NOTICE modifies, limits, or supersedes the rights granted under
+the Apache License.
+
+===============================================================================
