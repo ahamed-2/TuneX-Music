@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Responsive percentages (ConstraintLayout) -->
+    <!-- Reduced album art size to prevent excessive scrolling -->
+
+    <!-- Controls area - optimized for scrollable content -->
+
+    <!-- Fixed Material Design base values -->
+    <!-- Reduced album art dimensions for better scroll performance -->
+
+    <!-- Horizontal screen margin - reduced for more content space -->
+
+    <!-- Generic margins - optimized for scrollable layout -->
+
+    <!-- Vertical relationships - REDUCED for better scroll fit -->
+
+    <!-- Top and bottom padding - REDUCED to minimize scroll distance -->
+
+    <!-- Text sizes (use autoSizeTextType="uniform" on title) -->
+
+    <!-- Slider look - slightly thinner for compact layout -->
+
+    <!-- Buttons / FABs - REDUCED for compact scrollable layout -->
+
+    <!-- Main play button - slightly smaller to reduce scroll -->
+
+    <!-- Volume FAB sizes (mini FABs) -->
+
+    <!-- Max widths (for large tablets) -->
+
+</resources>
