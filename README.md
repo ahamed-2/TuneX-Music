@@ -171,20 +171,6 @@ Join the official TuneX Music community or support ongoing development:
 
 ---
 
-## Credits & Acknowledgements
-
-TuneX Music is a rebranded derivative built upon the open-source **SpatialFlow** project by **Shubham Karande** ([github.com/MythicalSHUB/SpatialFlow](https://github.com/MythicalSHUB/SpatialFlow)) and other open-source software and community projects. The original project is licensed under the Apache License 2.0. TuneX Music modifications are maintained by Ahamed Rahim.
-
-- **[SpatialFlow](https://github.com/MythicalSHUB/SpatialFlow):** Original project that TuneX Music is based on. Copyright © 2026 Shubham Karande.
-- **[ArchiveTune](https://github.com/rukamori/ArchiveTune):** Foundation for the lyrics engine, player canvas, UI animations, and lyrics providers.
-- **[InnerTune](https://github.com/z-huang/InnerTune):** Foundational architecture and core player model design.
-- **[OuterTune](https://github.com/OuterTune/OuterTune):** Logic and structure for InnerTube API calls and streaming metadata retrieval.
-- **[PixelPlayer](https://github.com/PixelPlayerHQ/PixelPlayer):** Design inspiration for the mini player layout and onboarding interface.
-- **[Material Design 3](https://m3.material.io/):** Google's design system providing expressive UI components.
-
----
-
-## Developer
 
 **Ahamed Rahim**
 - GitHub: [@ahamed-2](https://github.com/ahamed-2)
